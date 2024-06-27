@@ -55,4 +55,6 @@ void stat(Animal* animal) {
  struct 구조에서 pointer로 struct 설명시 -> 사용
  아니면 . 사용 ex) animal->name , animal.name
  struct 구조 불편성 > 객체 지향 요구 (4단원)
+
+ branch pratice
  */
