@@ -1,0 +1,25 @@
+git 사용법
+
+vs code terminal
+
+1.git init
+2.git remote add origin 주소
+3.작업
+4.git add -A
+5.git commit -m "메세지"
+6.git push origin master
+
+For branch
+1.git branch name
+2.git switch name
+3.작업
+(add, commit 하고)
+4.git push origin name
+
+> master와 merge하고 싶다면, master branch로 이동 후, 
+git merge name
+
+만약 push에 문제가 생길 경우(non-fast-forward) 
+1.pull 하고 한다
+2. git push --force origin master 강제 push 사용
+
