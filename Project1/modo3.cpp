@@ -10,10 +10,10 @@ typedef struct Animal {
 };
 
 void create(Animal* animal) {
-	std::cout << "ÀÌ¸§ : ";
+	std::cout << "ì´ë¦„ : ";
 	std::cin >> animal->name;
 
-	std::cout << "³ªÀÌ : ";
+	std::cout << "ë‚˜ì´ : ";
 	std::cin >> animal->age;
 
 	animal->health = 100;
@@ -39,22 +39,22 @@ void stat(Animal* animal) {
 
 //new, delete
 
-//c ¾ğ¾î malloc°ú À¯»ç 
-//int* p = new int; new´Â ¸Ş¸ğ¸® ÇÒ´çÀÌ¶ó pointer »ç¿ë
-//int Çü addr »ı¼º & p°¡ ÇØ´ç ¸Ş¸ğ¸® °ø°£ pointing ÇÑ´Ù.
+//c ì–¸ì–´ mallocê³¼ ìœ ì‚¬ 
+//int* p = new int; newëŠ” ë©”ëª¨ë¦¬ í• ë‹¹ì´ë¼ pointer ì‚¬ìš©
+//int í˜• addr ìƒì„± & pê°€ í•´ë‹¹ ë©”ëª¨ë¦¬ ê³µê°„ pointing í•œë‹¤.
 
-/*array ±¸Á¶´Â int* array = new int[3];
- ÇÏÁö¸¸ ÇÒ´çµÈ ¸Ş¸ğ¸®¿¡ °ªÀ» ÀÎ°¡ÇÒ¶§, *»ç¿ë x
+/*array êµ¬ì¡°ëŠ” int* array = new int[3];
+ í•˜ì§€ë§Œ í• ë‹¹ëœ ë©”ëª¨ë¦¬ì— ê°’ì„ ì¸ê°€í• ë•Œ, *ì‚¬ìš© x
  array[1] = 3;
- & delete½Ã delete[] array
+ & deleteì‹œ delete[] array
 
- °ıÈ£ ¾È¿¡ ÀÖ´Â º¯¼ö¶û ¹Û¿¡ ÀÖ´Â º¯¼ö¶û ÁöÁ¤ÀÌ ´Ş¶óÁø´Ù
- ±×¸®°í ÁöÁ¤ÀÌ ¾ÈµÇ¾îÀÖ´Ù¸é ¾Ë¾Æ¼­ °¡Àå °¡±î¿î ¹üÀ§¿¡¼­ Ã£¾Æ°£´Ù
- { a = 3 } & a = 3ÀÌ¶û ´Ù¸£´Ù
+ ê´„í˜¸ ì•ˆì— ìˆëŠ” ë³€ìˆ˜ë‘ ë°–ì— ìˆëŠ” ë³€ìˆ˜ë‘ ì§€ì •ì´ ë‹¬ë¼ì§„ë‹¤
+ ê·¸ë¦¬ê³  ì§€ì •ì´ ì•ˆë˜ì–´ìˆë‹¤ë©´ ì•Œì•„ì„œ ê°€ì¥ ê°€ê¹Œìš´ ë²”ìœ„ì—ì„œ ì°¾ì•„ê°„ë‹¤
+ { a = 3 } & a = 3ì´ë‘ ë‹¤ë¥´ë‹¤
 
- struct ±¸Á¶¿¡¼­ pointer·Î struct ¼³¸í½Ã -> »ç¿ë
- ¾Æ´Ï¸é . »ç¿ë ex) animal->name , animal.name
- struct ±¸Á¶ ºÒÆí¼º > °´Ã¼ ÁöÇâ ¿ä±¸ (4´Ü¿ø)
+ struct êµ¬ì¡°ì—ì„œ pointerë¡œ struct ì„¤ëª…ì‹œ -> ì‚¬ìš©
+ ì•„ë‹ˆë©´ . ì‚¬ìš© ex) animal->name , animal.name
+ struct êµ¬ì¡° ë¶ˆí¸ì„± > ê°ì²´ ì§€í–¥ ìš”êµ¬ (4ë‹¨ì›)
 
  branch pratice
  */
