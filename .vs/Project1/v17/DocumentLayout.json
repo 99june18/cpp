@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo5-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|solutionrelative:Project1\\modo5-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo5-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|solutionrelative:Project1\\modo5-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -37,20 +41,29 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "modo5-1.cpp",
               "DocumentMoniker": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo5-1.cpp",
               "RelativeDocumentMoniker": "Project1\\modo5-1.cpp",
               "ToolTip": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo5-1.cpp",
               "RelativeToolTip": "Project1\\modo5-1.cpp",
-              "ViewState": "AQIAAJ8AAAAAAAAAAAAAALAAAAAfAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAD4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-11T05:12:41.195Z",
+              "WhenOpened": "2024-07-15T01:52:34.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "modo5-2.cpp",
+              "DocumentMoniker": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo5-2.cpp",
+              "RelativeDocumentMoniker": "Project1\\modo5-2.cpp",
+              "ToolTip": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo5-2.cpp",
+              "RelativeToolTip": "Project1\\modo5-2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-15T01:40:42.736Z",
               "EditorCaption": ""
             }
           ]

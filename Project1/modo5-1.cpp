@@ -1,15 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <cstring>
 #include <iostream>
-#include <stdlib.h>
+#include <cstring>
+#include <cstdlib>
 
 class Complex {
 private:
     double real, img;
 
     double get_number(const char* str, int from, int to) const;
-
-    char* content;
 
 public:
     Complex(double real, double img) : real(real), img(img) {}
@@ -20,11 +18,6 @@ public:
     Complex operator-(const Complex& c) const;
     Complex operator*(const Complex& c) const;
     Complex operator/(const Complex& c) const;
-
-    Complex operator+(const char* str) const;
-    Complex operator-(const char* str) const;
-    Complex operator*(const char* str) const;
-    Complex operator/(const char* str) const;
 
     Complex& operator+=(const Complex& c);
     Complex& operator-=(const Complex& c);
@@ -55,14 +48,6 @@ Complex::Complex(const char* str) {
         }
     }
 
-    content = new char[3];
-
-    for (int i = pos_i-1; i < end-1; i++) {
-        content[i] = str[i];
-        img = atoi(content);
-    }
-
-
     // 만일 'i' 가 없다면 이 수는 실수 뿐이다.
     if (pos_i == -1) {
         real = get_number(str, begin, end - 1);
@@ -76,34 +61,34 @@ Complex::Complex(const char* str) {
     if (pos_i >= 1 && str[pos_i - 1] == '-') img *= -1.0;
 }
 double Complex::get_number(const char* str, int from, int to) const {
-    bool minus = false;
-    if (from > to) return 0;
+    char* num;
+    double value = 0.0;
 
-    if (str[from] == '-') minus = true;
-    if (str[from] == '-' || str[from] == '+') from++;
-
-    double num = 0.0;
-    double decimal = 1.0;
-
-    bool integer_part = true;
-    for (int i = from; i <= to; i++) {
-        if (isdigit(str[i]) && integer_part) {
-            num *= 10.0;
-            num += (str[i] - '0');
-        }
-        else if (str[i] == '.')
-            integer_part = false;
-        else if (isdigit(str[i]) && !integer_part) {
-            decimal /= 10.0;
-            num += ((str[i] - '0') * decimal);
-        }
-        else
-            break;  // 그 이외의 이상한 문자들이 올 경우
+    if (from > to)
+    {
+        return 0.0;
     }
 
-    if (minus) num *= -1.0;
+    num = new char[to - from];
 
-    return num;
+    if (from == 0) {
+        for (int i = from; i <= to; i++)
+        {
+            num[i] = str[i];
+        }
+    }
+    else
+    {
+        for (int i = from; i <= to; i++)
+        {
+            num[i - from] = str[i];
+        }
+    }
+    
+    value = atof(num);
+
+    return value;
+    
 }
 Complex Complex::operator+(const Complex& c) const {
     Complex temp(real + c.real, img + c.img);
@@ -123,22 +108,7 @@ Complex Complex::operator/(const Complex& c) const {
         (img * c.real - real * c.img) / (c.real * c.real + c.img * c.img));
     return temp;
 }
-Complex Complex::operator+(const char* str) const {
-    Complex temp(str);
-    return (*this) + temp;
-}
-Complex Complex::operator-(const char* str) const {
-    Complex temp(str);
-    return (*this) - temp;
-}
-Complex Complex::operator*(const char* str) const {
-    Complex temp(str);
-    return (*this) * temp;
-}
-Complex Complex::operator/(const char* str) const {
-    Complex temp(str);
-    return (*this) / temp;
-}
+
 Complex& Complex::operator+=(const Complex& c) {
     (*this) = (*this) + c;
     return *this;
@@ -163,14 +133,17 @@ Complex& Complex::operator=(const Complex& c) {
 
 int main() {
     Complex a(0, 0);
+    Complex b(0, 0);
+    Complex c(0, 0);
+    Complex d(0, 0);
     a = a + "-1.1 + i3.923";
     a.println();
-    a = a - "1.2 -i1.823";
-    a.println();
-    a = a * "2.3+i22";
-    a.println();
-    a = a / "-12+i55";
-    a.println();
+    b = b - "1.2-i1.823";
+    b.println();
+    c = c + "3.4";
+    c.println();
+    d = d + "-i1.25";
+    d.println();
 }
 
 /*
@@ -199,4 +172,6 @@ Complex Complex::operator+(const Complex& c) const {
 리턴이 발생하도록 함수가 설계되었다.
 
 대입 연산자는 객체의 변화가 요구되기 때문에, &꼴로 리턴되게 하였으며, 불필요한 복사가 없어도 된다.
+
+*********** &꼴의 class return과 그냥 class꼴의 return간의 차이를 인지하자 > 더 공부하기 ************** 
 */
