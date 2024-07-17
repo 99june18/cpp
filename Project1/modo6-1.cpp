@@ -3,7 +3,7 @@
 #include <string>
 
 class employee {
-private:
+protected:
 	std::string name;
 	int age;
 
@@ -24,12 +24,8 @@ public:
 //---------------------------------------------------------------------------------------
 // 
 //기본 생성자
-employee::employee(std::string _name, int _age, std::string _position, int _rank) {
-	name = _name;
-	age = _age;
-	position = _position;
-	rank = _rank;
-}
+employee::employee(std::string name, int age, std::string position, int rank) 
+	: name(name), age(age), position(position), rank(rank) {}
 
 //복사 생성자
 employee::employee(const employee& s) {
@@ -55,18 +51,13 @@ void employee::print() {
 //---------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------
 
-class manager {
+class manager : public employee{
 private:
-	std::string name;
-	int age;
-
-	std::string position;
-	int rank;
 	int year;
 
 public:
 	//기본 생성자
-	manager(std::string _name, int _age, std::string _position, int _rank, int _year);
+	manager(std::string name, int age, std::string position, int rank, int year);
 	//복사 생성자
 	manager(const manager& s);
 	//정보 보여주는 함수
@@ -77,20 +68,13 @@ public:
 
 };
 
-manager::manager(std::string _name, int _age, std::string _position, int _rank, int _year) {
-	name = _name;
-	age = _age;
-	position = _position;
-	rank = _rank;
-	year = _year;
-}
+manager::manager(std::string name, int age, std::string position, int rank, int year) 
+: employee(name, age, position, rank), year(year) { }
 
-manager::manager(const manager& s) {
-	name = s.name;
-	age = s.age;
-	position = s.position;
-	rank = s.rank;
+manager::manager(const manager& s)
+	: employee(s.name, s.age, s.position, s.rank) {
 	year = s.year;
+
 }
 
 int manager::pay_manager() {
@@ -271,4 +255,7 @@ private을 protected로 선언하면 된다.
 private로 상속 > 모든 지시자들이 private로 바뀐다. 즉 선언한거 이상의 값들만 접근이 가능하게 된다.
 
 그 밖에 상속된 class의 변수, 함수 모두 상속한 class 내부에서 사용 가능하다.
+
+상속될 시, 상속 하는 쪽에서 상속되는 쪽과 같은 변수가 있다면, 중복되엇던 변수는 상속되는쪽으로 들어간다.
+즉 중복 변수 선언 x
 */
