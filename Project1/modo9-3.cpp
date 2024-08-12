@@ -85,14 +85,15 @@ struct Int {
 
 template <typename T, typename U>
 struct add {
-  typedef Int<T::num + U::num> result;
+  typedef Int<T::num + U::num> result;  (type::type의 변수 중 하나 지정)를 통해 타입을 사용할 수 있다.
 };
 
 int main() {
   typedef Int<1> one;
   typedef Int<2> two;
 
-  typedef add<one, two>::result three;
+  typedef add<one, two>::result three;  //main에서 선언할 type이 다른 함수에서 선언한 type을 사용할 경우, 다음과 같이 사용
+  즉 선언한 type의 변수를 쓸려면 걍 ::로 끝나면 되고, 선언한 type을 이용해서 그 type의 type을 사용할려면, ::하고 또 작성
 
   std::cout << "Addtion result : " << three::num << std::endl;
 }
