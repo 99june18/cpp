@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|solutionrelative:Project1\\modo10-3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|solutionrelative:Project1\\modo10-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F036EDF-50B7-4AD5-95C6-E51C795DDB63}|Project1\\Project1.vcxproj|solutionrelative:Project1\\modo10-4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,27 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "modo10-3.cpp",
-              "DocumentMoniker": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-3.cpp",
-              "RelativeDocumentMoniker": "Project1\\modo10-3.cpp",
-              "ToolTip": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-3.cpp",
-              "RelativeToolTip": "Project1\\modo10-3.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAqAAAA",
+              "Title": "modo10-4.cpp",
+              "DocumentMoniker": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-4.cpp",
+              "RelativeDocumentMoniker": "Project1\\modo10-4.cpp",
+              "ToolTip": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-4.cpp",
+              "RelativeToolTip": "Project1\\modo10-4.cpp",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-14T04:22:17.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "modo10-2.cpp",
-              "DocumentMoniker": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-2.cpp",
-              "RelativeDocumentMoniker": "Project1\\modo10-2.cpp",
-              "ToolTip": "C:\\Users\\\uAE40\uC900\uD658\\source\\repos\\Project1\\Project1\\modo10-2.cpp",
-              "RelativeToolTip": "Project1\\modo10-2.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-13T00:45:38.91Z",
+              "WhenOpened": "2024-08-19T00:27:45.552Z",
               "EditorCaption": ""
             }
           ]
